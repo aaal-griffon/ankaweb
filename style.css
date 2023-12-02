@@ -1,6 +1,12 @@
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat';font-size: 22px;
+  font-family: 'Montserrat'; font-size: 22px;
+  margin: 0;
+  background-image: url('/images/backgrond.jpg'); /* Arka plan görüntüsü ekleyerek değiştir */
+  background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
+  background-repeat: no-repeat; /* Görüntüyü tekrar etme */
+  background-attachment: fixed;
+
 }
 header {
   position: relative;
@@ -8,7 +14,9 @@ header {
   background-color: #ece6ac;
   padding: 5px;
   border-radius: 25px;
-  margin-top: 0px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .headler nav {
   
@@ -90,9 +98,7 @@ header {
   display: block; 
 
 }
-.demo-dropdown > li ul {
-  transition: max-height 1s;
-}
+
 /*---------------Logo Css---------------*/
 .logo {
     display: inline-block;
@@ -101,6 +107,117 @@ header {
 .logo img {
   max-width: 60px;
   max-height: 60px;
-  margin-right: 20px;
+  margin-right: 35px;
 
+}
+/*---------------FOOTER---------------*/
+footer {
+
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: absolute;
+
+  height: 24%; /* Adjust this value as needed */
+  width: 97.9%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.footer-section h3 {
+  color: #ffcc00;
+  font-size: 27px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 8px;
+}
+
+.footer-content a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+/*---------------carousel---------------*/
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+
+  display: none;
+  animation: fadeOut 1.5 ease-in-out;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container .prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.carousel-container .prev {
+  left: 10px;
+}
+
+.carousel-container .next {
+  right: 10px;
+}
+/*---------------Gelişmeler ve Makeleler---------------*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  padding: 20px;
+  margin-left: 6px;
+}
+.section {
+  flex-basis: 48%; /* İki bölümü eşit genişlikte ayarlar */
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.makelevegelisme h2{
+  text-align: center;
+}
+/*---------------Animasyon---------------*/
+@keyframes fadeIn {
+  from { opacity: 1; }
+  to { opacity: 0.8; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0.8; }
 }
