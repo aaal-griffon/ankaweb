@@ -16,7 +16,7 @@ header {
   border-radius: 25px;
   margin-top: 5px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .headler nav {
   
@@ -118,8 +118,8 @@ footer {
   padding: 20px;
   position: absolute;
 
-  height: 24%; /* Adjust this value as needed */
-  width: 97.9%;
+  height: 30%; /* Adjust this value as needed */
+  width: 97%;
 }
 
 .footer-content {
@@ -199,9 +199,9 @@ footer {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 97%;
+  width: 95%;
   padding: 20px;
-  margin-left: 6px;
+  margin-left: 10px;
 }
 .section {
   flex-basis: 48%; /* İki bölümü eşit genişlikte ayarlar */
