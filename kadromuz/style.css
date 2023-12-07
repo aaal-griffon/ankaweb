@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
   font-family: 'Montserrat'; font-size: 22px;
   margin: 0;
-  background-color: rgb(235, 225, 196);
+  background-color: rgb(240, 233, 211);
   background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
   background-repeat: no-repeat; /* Görüntüyü tekrar etme */
   background-attachment: fixed;
@@ -110,6 +110,22 @@ header {
   margin-right: 35px;
 
 }
+/*---------------Kadromuz---------------*/
+.framework h2{
+  text-align: center;
+  text-decoration:underline;
+}
+.framework h3{
+  text-align: center;
+  margin: auto;
+  background-color:rgb(236,230,172,0.5);
+  border-radius: 25px;
+  padding: 15px; ;
+  max-width: 25%;
+}
+.framework h4{
+  text-align: center;
+}
 /*---------------FOOTER---------------*/
 footer {
 
@@ -155,100 +171,4 @@ footer {
 
 .footer-content a:hover {
   text-decoration: underline;
-}
-/*---------------carousel---------------*/
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  max-height: 350px;
-  margin: auto;
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.carousel-slide {
-
-  display: none;
-  animation: fadeOut 1.5 ease-in-out;
-}
-
-.carousel-container img {
-  width: 100%;
-  height: auto;
-}
-.carousel-container img:hover {
-  opacity: 0.8;
-  transition: all 0.5s ease-in-out;
-}
-.carousel-container .prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  padding: 20px;
-}
-
-.carousel-container .prev {
-  left: 10px;
-}
-
-.carousel-container .next {
-  right: 10px;
-}
-/*---------------Gelişmeler ve Makeleler---------------*/
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  padding: 20px;
-  margin: auto;
-  color: #221b22;  
-     
-}
-.section {
-flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
-  background-color: rgba(255,255, 255, 0.3);
-  
-  border-radius: 25px;
-  padding: 15px;
-  margin-bottom: 20px;
-  
-}
-.announcement{
-  flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
-  background-color: rgba(255,255, 255, 0.3);
-  
-  border-radius: 25px;
-  padding: 15px;
-  margin-bottom: 20px;
-  margin-left: 9%;
-  margin-right: 10px;
-}
-.makelevegelisme h2{
-  text-align: center;
-}
-
-/*---------------Yazıgönder---------------*/
-.sendwrite{
-  background-color: rgb(255, 65, 0,0.9);
-  
-  border-radius: 25px;
-    padding: 15px;
-    width: 40%; 
-    margin: auto;
-  margin-bottom:10px ;
-  }
-/*---------------Animasyon---------------*/
-@keyframes fadeIn {
-  from {   color: #221b22;
-   }
-  to { opacity: 0.8; }
-}
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0.8; }
 }
