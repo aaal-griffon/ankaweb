@@ -17,7 +17,7 @@
         <div class="logo">
         <a id="mainpage" href=""><img src="images/logo.webp" alt="Tarih Topluluğu"></a>
       </div>
-        <li><a href="#">Anasayfa</a></li>
+        <li><a href="">Anasayfa</a></li>
         <div class="demo-dropdown">
         <li class ="works" href=""><a>Çalışmalarımız</a>
           <ul>
@@ -28,9 +28,10 @@
         </li>
       </div>
         <li><a href="#">Etkinlikler</a></li>
-        <li><a href="kadromuz/index.html">Kadromuz</a></li>
-        <li><a href="/hakkımızda/">Hakkımızda</a></li>
+        <li><a href="kadromuz/">Kadromuz</a></li>
+        <li><a href="hakkimizda/">Hakkımızda</a></li>
       </ul>
+      <button class = "sendbutton">Yazı Gönder</button>
     </nav>
   </header>
 </div>
@@ -66,8 +67,31 @@
   </div>
 </div>
 <div class = "sendwrite">
-<h2>Yazı Gönder</h2>
+  <h2>Yazı Gönder</h2>
+  <div>
+  <form method="post">
+    <div>
+  <label for="baslik">Ad Soyad:</label>
+  <input type="text" name="baslik" id="baslik" placeholder="Başlık">
+  </div>
+  <div>
+  <label for="mail">E-posta Adresi:</label>
+  <input type="email" name="mail" id="mail" placeholder="E-posta Adresi">
 </div>
+  <div>
+  <label for="telefon">Telefon Numarası:</label>
+  <input type="tel" name="telefon" id="telefon" placeholder="Telefon Numarası">
+</div>
+  <div>
+  <label for="dosya">Dosya:</label>
+  <input type="file" name="dosya" id="dosya">
+</div>
+  <div>
+  <button type="submit">Gönder</button>
+</div>
+</div>
+</form>
+  </div>
 <footer>
   <div class="footer-content">
       <div class="footer-section">

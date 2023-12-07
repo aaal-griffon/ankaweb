@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   font-family: 'Montserrat'; font-size: 22px;
-  margin: 0;
+
   background-color: rgb(235, 225, 196);
   background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
   background-repeat: no-repeat; /* Görüntüyü tekrar etme */
@@ -49,8 +49,15 @@ header {
 .headler a:hover {
   color: #000;
   display: inline-block;
-  
-  
+}
+.headler .sendbutton {
+background-color: rgba(255, 65, 0, 0.9);
+font-size: 18px;
+color: white;
+border: none;
+max-height: 50px;
+border-radius: 25px;
+margin-top: 0.3%;
 }
 /*---------------DROP-MENU---------------*/
 .demo-dropdown{
@@ -117,9 +124,9 @@ footer {
   color: white;
   padding: 20px;
   position: absolute;
-
+margin-left: -9px;
   height: 30%; /* Adjust this value as needed */
-  width: 97%;
+  width: 98%;
 }
 
 .footer-content {
@@ -233,15 +240,69 @@ flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
 }
 
 /*---------------Yazıgönder---------------*/
-.sendwrite{
-  background-color: rgb(255, 65, 0,0.9);
-  
+.sendwrite {
+  background-color: rgba(255, 65, 0, 0.9);
   border-radius: 25px;
-    padding: 15px;
-    width: 40%; 
-    margin: auto;
-  margin-bottom:10px ;
-  }
+  padding: 15px;
+  width: 35%;
+  margin: auto;
+  margin-bottom: 15px;
+
+  /* Formu kapsayıcı olarak belirle */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Form elemanları için genel stiller */
+.sendwrite .input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sendwrite input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  display: flex;
+  width: 99%;
+  
+}
+
+/* Başlık stili */
+.sendwrite h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Dosya yükleme alanı stili */
+.sendwrite input[type="file"] {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Gönderme butonu stili */
+.sendwrite button {
+  font-size: 18px;
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+.sendwrite label {
+  flex-basis: 30%; /* Adjust this value to change label width */
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
 /*---------------Animasyon---------------*/
 @keyframes fadeIn {
   from {   color: #221b22;
