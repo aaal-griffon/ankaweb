@@ -119,16 +119,15 @@ body {
   }
   /*---------------FOOTER---------------*/
   footer {
-
+  
     background-color: #333;
     color: white;
     padding: 20px;
-    position: absolute;
-  margin-left: -9px;
-    height: 30%; /* Adjust this value as needed */
-    width: 98%;
+ 
+    bottom: 0;
+    height: 28.5%; /* Adjust this value as needed */
+    width: 97.2%;
   }
-  
   
   .footer-content {
     display: flex;

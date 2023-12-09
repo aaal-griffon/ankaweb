@@ -263,7 +263,7 @@ flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
   padding: 15px;
   width: 35%;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   /* Formu kapsayıcı olarak belirle */
   display: flex;
