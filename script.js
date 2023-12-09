@@ -25,11 +25,29 @@ showSlide(currentIndex);
 // Auto play
 intervalId = setInterval(() => changeSlide(1), 3000); // 3000 milliseconds (3 seconds) interval for auto play
 document.getElementById("sendbutton").addEventListener("click", function() {
-    selamYaz();
+    scroll();
   });
   
-  function selamYaz() {
+  function scroll() {
     var div = document.getElementById("sendwrite");
     div.scrollIntoView({ behavior: 'smooth' });
-    console.log("selam");
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    // Makaleler için
+    var makaleListesi = document.getElementById('makaleListesi');
+    var makaleler = ["Anka", "Mercek", "Belgeselimiz"];
+  
+    for (var i = 0; i < makaleler.length; i++) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '/makeleler/'+makaleler[i]; // İstersen buraya makalenin gerçek linkini ekleyebilirsin
+      a.textContent = makaleler[i];
+      li.appendChild(a);
+      makaleListesi.appendChild(li);
+    }
+  
+    // Gelişmeler için
+    var gelistirmelerIcerik = document.getElementById('gelistirmelerIcerik');
+    // Buraya gelişmelerin içeriğini ekleyebilirsin
+    gelistirmelerIcerik.innerHTML = '<p>Burada gelişmelerin içeriği olacak.</p>';
+  });

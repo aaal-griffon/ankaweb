@@ -73,7 +73,7 @@ margin-left: 5px;
   display: none; /* Açılır menü li:hover olmadığı sürece gizlencektir */
   top: 100%; /* Top 100% değeri parent li'ye göre hesaplanır ve li'nin bittiği noktayı göstermektedir. */
   left: 0; /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
-  width: 135px;
+  width: 210px;
   background-color: #ece6ac;
 
   border-radius:0px 0px 25px 25px;
@@ -93,7 +93,7 @@ margin-left: 5px;
 }
 .demo-dropdown .belgesel{
   margin-bottom: 15px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .demo-dropdown .anka{
   margin-top: 15px;
@@ -205,6 +205,7 @@ margin-left: -9px;
 .carousel-container .next {
   right: 10px;
 }
+
 /*---------------Gelişmeler ve Makeleler---------------*/
 .container {
   display: flex;
@@ -237,7 +238,24 @@ flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
 .makelevegelisme h2{
   text-align: center;
 }
+.container ul {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+.container li {
+  margin-right: 20px;
+  
+}
+.container a {
+  text-decoration: none;
+  color: #221b22;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 
+}
 /*---------------Yazıgönder---------------*/
 .sendwrite {
   background-color: rgba(255, 65, 0, 0.9);

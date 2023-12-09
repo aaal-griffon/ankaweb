@@ -116,8 +116,8 @@ body {
     background-color: #333;
     color: white;
     padding: 20px;
-    position: absolute;
-    
+    position: fixed;
+    bottom: 0;
     height: 28.5%; /* Adjust this value as needed */
     width: 97.2%;
   }
@@ -158,13 +158,61 @@ body {
   }
   
 /*---------------HAKKIMIZDA---------------*/
-.hakkimizdametin{
- margin-top: 60px;
- margin-bottom:275px ;
- margin-left: 100px;
- margin-right: 100px;
- border-radius: 25px;
+.hakkimizda-kutu {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  padding: 100px;
 }
-.hakkimizdametin p{
-  margin-left: 10px;
+
+.hakkimizda-baslik {
+  text-align: center;
+  font-size: 40px;
+  color: #3498db; /* Başlık rengi */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  max-width: 500px;
+}
+
+.hakkimizdametin {
+
+  font-size: 26px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hakkimizdametin p {
+  margin-bottom: 20px;
+}
+
+.hakkimizdametin p:first-of-type {
+  font-weight: bold;
+  color: #1a5276; /* Başlık rengi */
+  
+  background-color: #ecf0f1; /* Ana kutu arka plan rengi */
+}
+.hakkimizdametin p:nth-of-type(2) {
+  font-weight: bold;
+  background-color: #ecf0f1; /* Ana kutu arka plan rengi */
+}
+
+.hakkimizdametin a {
+  color: #3498db; /* Bağlantı rengi */
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.hakkimizdametin a:hover {
+  color: #e74c3c; /* Hover rengi */
+  border-bottom: 2px solid #e74c3c; /* Hover alt çizgisi */
+}
+
+.hakkimizda-altkutu {
+  background-color: #3498db; /* Alt kutu arka plan rengi */
+  color: #fff; /* Alt kutu metin rengi */
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
