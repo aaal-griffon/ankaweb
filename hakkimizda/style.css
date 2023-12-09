@@ -49,9 +49,16 @@ body {
   .headler a:hover {
     color: #000;
     display: inline-block;
-    
-    
   }
+  .headler .sendbutton {
+    background-color: rgba(255, 65, 0, 0.9);
+    font-size: 18px;
+    color: white;
+    border: none;
+    max-height: 50px;
+    border-radius: 20px;
+    margin-top: 0.3%;
+    }
   /*---------------DROP-MENU---------------*/
   .demo-dropdown{
     z-index: 2;
@@ -59,7 +66,7 @@ body {
   .demo-dropdown > li {
     position: relative; /* içerisinde ul position:absolute değerine sahip olduğu için kapsayıcı li relative olmalı */
     display: inline-block;
-  
+  margin-left: 5px;
   }
   .demo-dropdown > li ul {
   
@@ -67,9 +74,9 @@ body {
     display: none; /* Açılır menü li:hover olmadığı sürece gizlencektir */
     top: 100%; /* Top 100% değeri parent li'ye göre hesaplanır ve li'nin bittiği noktayı göstermektedir. */
     left: 0; /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
-    width: 135px;
+    width: 210px;
     background-color: #ece6ac;
-    text-align: center;
+  
     border-radius:0px 0px 25px 25px;
   
   }
@@ -87,7 +94,7 @@ body {
   }
   .demo-dropdown .belgesel{
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .demo-dropdown .anka{
     margin-top: 15px;
@@ -171,8 +178,7 @@ body {
   color: #3498db; /* Başlık rengi */
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #fff;
-  max-width: 500px;
+  
 }
 
 .hakkimizdametin {
@@ -189,12 +195,16 @@ body {
 .hakkimizdametin p:first-of-type {
   font-weight: bold;
   color: #1a5276; /* Başlık rengi */
-  
+  padding: 10px;
   background-color: #ecf0f1; /* Ana kutu arka plan rengi */
+  
+  border-radius: 25px;
 }
 .hakkimizdametin p:nth-of-type(2) {
   font-weight: bold;
-  background-color: #ecf0f1; /* Ana kutu arka plan rengi */
+  background-color: #ecf0f1; 
+    border-radius: 25px;
+    padding: 10px
 }
 
 .hakkimizdametin a {
