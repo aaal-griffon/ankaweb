@@ -1,8 +1,7 @@
 body {
   background-color: #ffffff;
   font-family: 'Montserrat'; font-size: 22px;
-
-  background-color: rgb(235, 225, 196);
+  background-image: url('/images/backgrond.jpg');
   background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
   background-repeat: no-repeat; /* Görüntüyü tekrar etme */
   background-attachment: fixed;
@@ -66,7 +65,7 @@ margin-top: 0.3%;
 .demo-dropdown > li {
   position: relative; /* içerisinde ul position:absolute değerine sahip olduğu için kapsayıcı li relative olmalı */
   display: inline-block;
-
+margin-left: 5px;
 }
 .demo-dropdown > li ul {
 
@@ -76,7 +75,7 @@ margin-top: 0.3%;
   left: 0; /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
   width: 135px;
   background-color: #ece6ac;
-  text-align: center;
+
   border-radius:0px 0px 25px 25px;
 
 }
@@ -218,7 +217,7 @@ margin-left: -9px;
 }
 .section {
 flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
-  background-color: rgba(255,255, 255, 0.3);
+  background-color: rgba(255,255, 255,0.9);
   
   border-radius: 25px;
   padding: 15px;
@@ -227,7 +226,7 @@ flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
 }
 .announcement{
   flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
-  background-color: rgba(255,255, 255, 0.3);
+  background-color: rgba(255,255, 255,0.9);
   
   border-radius: 25px;
   padding: 15px;

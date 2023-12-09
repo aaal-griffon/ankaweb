@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
   font-family: 'Montserrat'; font-size: 22px;
   margin: 0;
-  background-color: rgb(240, 233, 211);
+  background-image: url('/images/backgrond.jpg');
   background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
   background-repeat: no-repeat; /* Görüntüyü tekrar etme */
   background-attachment: fixed;
@@ -115,16 +115,76 @@ header {
   text-align: center;
   text-decoration:underline;
 }
-.framework h3{
+.framework .sema h3{
   text-align: center;
   margin: auto;
-  background-color:rgb(236,230,172,0.5);
+  background-color:rgb(236,230,172,1);
   border-radius: 25px;
-  padding: 15px; ;
+  padding: 15px; 
   max-width: 25%;
 }
-.framework h4{
+.framework .sema h4{
   text-align: center;
+  text-align: center;
+  background-color:rgb(236,230,172,1);
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 250px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.framework .yontemkurul h3{
+  text-align: center;
+  margin: auto;
+  background-color:rgb(236,230,172,1);
+  border-radius: 25px;
+  padding: 15px; 
+  max-width: 15%;
+}
+.framework .yanbaslik{
+  margin-top: 10px;
+  display: flex; 
+  justify-content: space-between;
+}
+.framework .yanbaslik h4{
+  
+  text-align: center;
+  background-color:rgb(236,230,172,1);
+  border-radius: 25px;
+  padding: 15px; ;
+  margin: auto;
+}
+.framework .names1{
+  margin-top: 10px;
+  display: flex; 
+  justify-content: space-between;
+}
+.framework .names1 h5{
+  text-align: center;
+  margin: auto;
+  max-width: 150px;
+  text-align: center;
+  background-color:rgb(236,230,172,1);
+  border-radius: 25px;
+  padding: 5px;
+  margin: auto;
+}
+.framework .names2{
+  margin-top: 10px;
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 67px;
+}
+.framework .names2 h5{
+  text-align: center;
+  margin: auto;
+  max-width: 150px;
+  text-align: center;
+  background-color:rgb(236,230,172,1);
+  border-radius: 25px;
+  padding: 5px; ;
+  margin: auto;
 }
 /*---------------FOOTER---------------*/
 footer {
@@ -135,7 +195,7 @@ footer {
   position: absolute;
 
   height: 30%; /* Adjust this value as needed */
-  width: 97%;
+  width: 97.5%;
 }
 
 .footer-content {

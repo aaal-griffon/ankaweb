@@ -24,3 +24,12 @@ showSlide(currentIndex);
 
 // Auto play
 intervalId = setInterval(() => changeSlide(1), 3000); // 3000 milliseconds (3 seconds) interval for auto play
+document.getElementById("sendbutton").addEventListener("click", function() {
+    selamYaz();
+  });
+  
+  function selamYaz() {
+    var div = document.getElementById("sendwrite");
+    div.scrollIntoView({ behavior: 'smooth' });
+    console.log("selam");
+  }
