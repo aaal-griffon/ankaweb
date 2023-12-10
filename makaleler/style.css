@@ -1,122 +1,156 @@
 body {
-    background-color: #ffffff;
-    font-family: 'Montserrat'; font-size: 22px;
-    margin: 0;
-    background-image: url('/images/backgrond.jpg'); /* Arka plan görüntüsü ekleyerek değiştir */
-    background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
-    background-repeat: no-repeat; /* Görüntüyü tekrar etme */
-    background-attachment: fixed;
+  background-color: #ffffff;
+  font-family: 'Montserrat'; font-size: 22px;
+  margin: 0;
+  background-image: url('/images/backgrond.jpg');
+  background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
+  background-repeat: no-repeat; /* Görüntüyü tekrar etme */
+  background-attachment: fixed;
+
+}
+header {
+  position: relative;
+  z-index: 3;
+  background-color: #ece6ac;
+  padding: 5px;
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 11px;
+}
+.headler nav {
   
-  }
-  header {
-    position: relative;
-    z-index: 3;
-    background-color: #ece6ac;
-    padding: 5px;
-    border-radius: 25px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .headler nav {
-    
-    display: flex;
-    justify-content: space-between;
-  }
-  .headler ul {
-    list-style: none;
-    padding: 0;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-  }
-  .headler li {
+  display: flex;
+  justify-content: space-between;
+}
+.headler ul {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.headler li {
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+
+.headler a {
+  text-decoration: none;
+  color: #221b22;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+}
+.headler a:hover {
+  color: #000;
+  display: inline-block;
+}
+.headler .sendbutton {
+background-color: rgba(255, 65, 0, 0.9);
+font-size: 18px;
+color: white;
+border: none;
+max-height: 50px;
+border-radius: 20px;
+margin-top: 0.3%;
+}
+/*---------------DROP-MENU---------------*/
+.demo-dropdown{
+  z-index: 2;
+}
+.demo-dropdown > li {
+  position: relative; /* içerisinde ul position:absolute değerine sahip olduğu için kapsayıcı li relative olmalı */
+  display: inline-block;
+margin-left: 5px;
+}
+.demo-dropdown > li ul {
+
+  position: absolute; /* Açılır menü mouse üzerine gelerek açıldığında aşağıdaki öğeleri kaydırması istenmiyor. Bu yüzden absolute. */
+  display: none; /* Açılır menü li:hover olmadığı sürece gizlencektir */
+  top: 100%; /* Top 100% değeri parent li'ye göre hesaplanır ve li'nin bittiği noktayı göstermektedir. */
+  left: 0; /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
+  width: 210px;
+  background-color: #ece6ac;
+
+  border-radius:0px 0px 25px 25px;
+
+}
+
+.demo-dropdown > li ul li a {
+  color: #333;
+
+  transition: max-height 1s;
+
+}
+
+.demo-dropdown .droped{
+  margin-left: 10px;
+  
+}
+.demo-dropdown .belgesel{
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.demo-dropdown .anka{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.demo-dropdown > li:hover ul {
+
+  display: block; 
+
+}
+/* Mobil menü stil */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  background-color: #ece6ac;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.mobile-menu a {
+  padding: 10px;
+  color: #221b22;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mobile-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Mobil cihazlar için menü düğmesi stil */
+.mobile-menu-button {
+  display: none;
+}
+/*---------------Logo Css---------------*/
+.logo {
     display: inline-block;
-    margin-right: 20px;
-    
-  }
-  
-  
-  .headler a {
-    text-decoration: none;
-    color: #221b22;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-    font-size: 18px;
-  }
-  .headler a:hover {
-    color: #000;
-    display: inline-block;
-  }
-  .headler .sendbutton {
-    background-color: rgba(255, 65, 0, 0.9);
-    font-size: 18px;
-    color: white;
-    border: none;
-    max-height: 50px;
-    border-radius: 20px;
-    margin-top: 0.3%;
-    }
-  /*---------------DROP-MENU---------------*/
-  .demo-dropdown{
-    z-index: 2;
-  }
-  .demo-dropdown > li {
-    position: relative; /* içerisinde ul position:absolute değerine sahip olduğu için kapsayıcı li relative olmalı */
-    display: inline-block;
-  margin-left: 5px;
-  }
-  .demo-dropdown > li ul {
-  
-    position: absolute; /* Açılır menü mouse üzerine gelerek açıldığında aşağıdaki öğeleri kaydırması istenmiyor. Bu yüzden absolute. */
-    display: none; /* Açılır menü li:hover olmadığı sürece gizlencektir */
-    top: 100%; /* Top 100% değeri parent li'ye göre hesaplanır ve li'nin bittiği noktayı göstermektedir. */
-    left: 0; /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
-    width: 210px;
-    background-color: #ece6ac;
-  
-    border-radius:0px 0px 25px 25px;
-  
-  }
-  
-  .demo-dropdown > li ul li a {
-    color: #333;
-  
-    transition: max-height 1s;
-  
-  }
-  
-  .demo-dropdown .droped{
-    margin-left: 10px;
-    
-  }
-  .demo-dropdown .belgesel{
-    margin-bottom: 15px;
-    margin-left: 10px;
-  }
-  .demo-dropdown .anka{
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-  .demo-dropdown > li:hover ul {
-  
-    display: block; 
-  
-  }
-  
-  /*---------------Logo Css---------------*/
-  .logo {
-      display: inline-block;
-      text-align: center;
-  }
-  .logo img {
-    max-width: 60px;
-    max-height: 60px;
-    margin-right: 35px;
-  
-  }
+    text-align: center;
+}
+.logo img {
+  max-width: 60px;
+  max-height: 60px;
+  margin-right: 35px;
+
+}
+.logo2 {
+  display: none;
+
+}
+
   /*---------------FOOTER---------------*/
   footer {
   
@@ -226,3 +260,77 @@ body {
   border-radius: 5px;
   margin-top: 20px;
 }
+@media only screen and (max-width: 768px) {
+  /*---------------Logo---------------*/
+    .logo2 {
+      display: inline-block;
+      text-align: center;
+    }
+    .logo2 img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 35px;
+    
+    }
+    .logo{
+      display: none;
+    }
+  /*---------------Headler---------------*/
+    .headler nav {
+      flex-direction: column;
+      align-items: flex-start;
+      
+    }
+  
+    .headler ul {
+      flex-direction: column; /* Yeni eklendi */
+      align-items: flex-start;
+      
+    }
+  
+    .headler li {
+      margin: 10px 0;
+      margin-right: 1000px;
+    }
+  
+    .headler .sendbutton {
+      margin-top: 10px; /* Yeni eklendi */}
+        .headler ul {
+      display: none;
+    }
+  
+  /*---------------Mobil Menu---------------*/
+    .mobile-menu-button {
+      display: block;
+      cursor: pointer;
+      float: right;
+      margin-left: 20vb;
+      margin-top: 3vb;
+    }
+  
+    .mobile-menu-button:hover {
+      background-color: #ddd;
+      
+    }
+  
+    .mobile-menu.show {
+      display: flex;
+    }
+    .mobile-menu-button {
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      position: relative;
+    }
+    
+  /*---------------Hamburger icon---------------*/
+    .bar {
+      width: 100%;
+      height: 4px;
+      background-color: #333;
+      margin: 3px 0;
+    }
+    
+  
+  }
