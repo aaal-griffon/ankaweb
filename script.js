@@ -51,7 +51,10 @@ document.getElementById("sendbutton").addEventListener("click", function() {
       makaleListesi.appendChild(li);
     }
     }
-  
+    function toggleMobileMenu() {
+      var mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu.classList.toggle('show');
+    }
   document.addEventListener('DOMContentLoaded', function () {
 
   const jsonDosyaURL = 'veri.json';

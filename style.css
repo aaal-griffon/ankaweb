@@ -104,7 +104,36 @@ margin-left: 5px;
   display: block; 
 
 }
+/* Mobil menü stil */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  background-color: #ece6ac;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
 
+.mobile-menu a {
+  padding: 10px;
+  color: #221b22;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mobile-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Mobil cihazlar için menü düğmesi stil */
+.mobile-menu-button {
+  display: none;
+}
 /*---------------Logo Css---------------*/
 .logo {
     display: inline-block;
@@ -329,4 +358,38 @@ flex-basis: 50%; /* İki bölümü eşit genişlikte ayarlar */
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0.8; }
+}
+@media only screen and (max-width: 768px) {
+  .headler nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headler ul {
+    flex-direction: column; /* Yeni eklendi */
+    align-items: flex-start;
+  }
+
+  .headler li {
+    margin: 10px 0;
+  }
+
+  .headler .sendbutton {
+    margin-top: 10px; /* Yeni eklendi */}
+      .headler ul {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-menu-button:hover {
+    background-color: #ddd;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
 }
