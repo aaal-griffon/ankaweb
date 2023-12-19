@@ -8,3 +8,6 @@ function toggleMobileMenu() {
         ulElement.style.display = 'none';
     }
 }
+function yazigonderscroll(){
+    window.location.href = "../#sendwrite";
+}

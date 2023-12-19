@@ -157,7 +157,9 @@ margin-left: 5px;
     background-color: #333;
     color: white;
     padding: 20px;
+ 
     bottom: 0;
+
   }
   
   .footer-content {
@@ -201,17 +203,17 @@ margin-left: 5px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
   padding: 100px;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .hakkimizda-baslik {
   text-align: center;
   font-size: 40px;
-  color: #3498db; /* Başlık rengi */
+  color: #190aec; /* Başlık rengi */
   background-color: #ecf0f1;
-  max-width: 20%;
   margin-bottom: 20px;
   padding: 10px;
+  max-width: 30%;
   border-radius: 25px;
 }
 
@@ -219,7 +221,7 @@ margin-left: 5px;
 
   font-size: 26px;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
 }
 
 .hakkimizdametin p {
@@ -233,6 +235,12 @@ margin-left: 5px;
   background-color: #ecf0f1; /* Ana kutu arka plan rengi */
   
   border-radius: 25px;
+}
+.hakkimizdametin p:nth-of-type(2) {
+  font-weight: bold;
+  background-color: #ecf0f1; 
+    border-radius: 25px;
+    padding: 10px
 }
 
 .hakkimizdametin a {

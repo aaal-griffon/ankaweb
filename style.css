@@ -5,7 +5,7 @@ body {
   background-size: cover; /* Görüntüyü ekran boyutuna sığdır */
   background-repeat: no-repeat; /* Görüntüyü tekrar etme */
   background-attachment: fixed;
-
+margin: -0;
 }
 header {
   position: relative;
@@ -151,51 +151,51 @@ margin-left: 5px;
 }
 
 /*---------------FOOTER---------------*/
-footer {
+ 
+  footer {
+  
+    background-color: #333;
+    color: white;
+    padding: 20px;
+ 
+    bottom: 0;
 
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  position: absolute;
-margin-left: -9px;
-  height: 30%; /* Adjust this value as needed */
-  width: 98%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-section {
-  flex: 1;
-  text-align: left;
-  margin-left: 50px;
-}
-
-.footer-section h3 {
-  color: #ffcc00;
-  font-size: 27px;
-}
-
-.footer-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-content ul li {
-  margin-bottom: 8px;
-}
-
-.footer-content a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-content a:hover {
-  text-decoration: underline;
-}
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .footer-section h3 {
+    color: #ffcc00;
+    font-size: 27px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-content a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
 /*---------------carousel---------------*/
 .carousel-container {
   position: relative;

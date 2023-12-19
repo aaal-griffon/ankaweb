@@ -1,15 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y821FEVLY"></script>
-<script src = "script.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4Y821FEVLY');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <title>sex işçileri koruma</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mercek</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../../images/logo.webp">
 </head>
 <body>
   
@@ -17,7 +23,7 @@
     <header>
       <nav>
         <div class="logo2">
-          <a id="mainpage" href="/"><img src="../images/logo.webp" alt="Tarih Topluluğu"></a>
+          <a id="mainpage" href="/"><img src="../../images/logo.webp" alt="Tarih Topluluğu"></a>
         <div class="mobile-menu-button" onclick="toggleMobileMenu()">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -27,38 +33,37 @@
         </div>
         <ul>
           <div class="logo">
-            <a id="mainpage" href="/"><img src="../images/logo.webp" alt="Tarih Topluluğu"></a>
+            <a id="mainpage" href="/"><img src="../../images/logo.webp" alt="Tarih Topluluğu"></a>
           </div>
   
           <li><a href="/">Anasayfa</a></li>
           <div class="demo-dropdown">
           <li class ="works" href=""><a>Çalışmalarımız</a>
             <ul>
-              <li class = "anka"><a href="/anka">Anka Dergimiz</a></li>
-              <li class = "droped"><a href="/mercek">Mercek Gazetemiz</a></li>
-              <li class = "droped"><a href="/eharita">E-Haritamız</a></li>
+              <li class = "anka"><a href="../ankadergimiz/">Anka Dergimiz</a></li>
+              <li class = "droped"><a href="">Mercek Gazetemiz</a></li>
+              <li class = "droped"><a href="../eharita">E-Haritamız</a></li>
               <li class = "droped"><a href="/makeler">Makelelerimiz</a></li>
-              <li class = "belgesel"><a href="/belgesel">Belgeselimiz</a></li>
+              <li class = "belgesel"><a href="../belgesel">Belgeselimiz</a></li>
             </ul>
           </li>
         </div>
   
         
-          <li><a href="">Kadromuz</a></li>
+          <li><a href="/kadromuz/">Kadromuz</a></li>
           <li><a href="/hakkimizda/">Hakkımızda</a></li>
           
-        <button class = "sendbutton" id="sendbutton" >Yazı Gönder</button>
+        <button class = "sendbutton" id="sendbutton" onclick="yazigonderscroll()">Yazı Gönder</button>
         </ul>
   
       </nav>
     </header>
   </div>
 <div class="hakkimizda-kutu">
-<h2 class="hakkimizda-baslik">sex işçileri koruma</h2>
+<h2 class="hakkimizda-baslik">Mercek</h2>
 <div class = "hakkimizdametin">
-<p>Bence Sex işçileri olabildiğince korunmalı çünkü onlar herşeyden değerli bize zevk veriyorlar</p>
+<p> Tarih eğitiminde ve yazımında süreklilik başta gelen ilkelerdendir. Biz de topluluğumuzun tarih anlatımında bu ilkeyi yaşatmak için 2003'ten beri mürekkeplerimizi Mercek Gazetesi'ne akıtıyoruz.</p>
   </div>
-  <h2>Yazar = kerem </h2>
 </div>
     <footer>
     <div class="footer-content">
@@ -80,9 +85,6 @@
         </div>
       </div>
   </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
-
-        
-        

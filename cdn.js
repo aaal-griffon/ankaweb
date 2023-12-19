@@ -1,4 +1,67 @@
+const fs = require('fs');
+const readline = require('readline');
 
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function readData() {
+  try {
+    const data = fs.readFileSync('veri.json', 'utf-8');
+    return JSON.parse(data);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return null;
+    } else {
+      throw error;
+    }
+  }
+}
+
+function writeData(data) {
+  fs.writeFileSync('veri.json', JSON.stringify(data, null, 2), 'utf-8');
+}
+
+function addNewData() {
+  const existingData = readData() || [];
+
+  rl.question('Makale Başlığı: ', (title) => {
+    rl.question('Yazar Adı: ', (author) => {
+      rl.question('Site Adı: ', (site) => {
+        rl.question('Yazınız: ', (content) => {
+          const newData = {
+            "baslik": title,
+            "yazar": author,
+            "site": site,
+            "yazi": content
+          };
+
+          existingData.push(newData);
+          writeData(existingData);
+
+          rl.question('Başka veri eklemek istiyor musunuz? (E/H): ', (answer) => {
+            if (answer.toLowerCase() !== 'e') {
+              rl.close();
+            } else {
+              addNewData();
+            }
+          });
+        });
+      });
+    });
+  });
+}
+
+function createHtmlFiles(data) {
+  const makalelerFolder = 'makaleler';
+
+  if (!fs.existsSync(makalelerFolder)) {
+    fs.mkdirSync(makalelerFolder);
+  }
+
+  data.forEach((makale, index) => {
+    const htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +71,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <title>sema nisa</title>
+  <title>${makale['baslik']}</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="../images/logo.webp">
 </head>
@@ -51,9 +114,9 @@
     </header>
   </div>
   <div class="hakkimizda-kutu">
-    <h2 class="hakkimizda-baslik">sema nisa</h2>
+    <h2 class="hakkimizda-baslik">${makale['baslik']}</h2>
     <div class = "hakkimizdametin">
-      <p></p>
+      <p>${makale['yazi']}</p>
       </div>
   </div>
       <footer>
@@ -78,4 +141,22 @@
       </footer>
       <script src="script.js"></script>
     </body>
-  </html>
+  </html>`;
+  
+    const fileName = `${makalelerFolder}/${makale['site']}.html`;
+    fs.writeFileSync(fileName, htmlContent);
+    console.log(`${fileName} oluşturuldu.`);
+  });
+}
+
+rl.on('close', () => {
+  const data = readData();
+  
+  if (data) {
+    createHtmlFiles(data);
+  } else {
+    console.log('Henüz hiç veri eklenmemiş.');
+  }
+});
+
+addNewData();
