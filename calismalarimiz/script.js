@@ -14,5 +14,5 @@ function toggleMobileMenu() {
     }
 }
 function yazigonderscroll(){
-    window.location.href = "../#sendwrite";
+    window.location.href = "../../#sendwrite";
 }

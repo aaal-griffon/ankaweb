@@ -199,9 +199,8 @@ margin-left: 5px;
 /*---------------carousel---------------*/
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 900px;
-  max-height: 350px;
+  width: 45%;
+border-radius: 25px;
   margin: auto;
   margin-top: 10px;
   overflow: hidden;
@@ -227,9 +226,8 @@ margin-left: 5px;
   transform: translateY(-50%);
   font-size: 24px;
   cursor: pointer;
-  color: white;
-  background-color: black;
-  padding: 20px;
+  color: #000;
+  padding: 10px;
 }
 
 .carousel-container .prev {
