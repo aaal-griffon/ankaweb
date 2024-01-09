@@ -216,10 +216,7 @@ border-radius: 25px;
   width: 100%;
   height: auto;
 }
-.carousel-container img:hover {
-  opacity: 0.8;
-  transition: all 0.5s ease-in-out;
-}
+
 .carousel-container .prev, .next {
   position: absolute;
   top: 50%;
