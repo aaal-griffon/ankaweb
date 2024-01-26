@@ -1,0 +1,198 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    background-image: url('/images/backgrond.jpg');
+    background-size: cover;
+    /* Görüntüyü ekran boyutuna sığdır */
+    background-repeat: no-repeat;
+    /* Görüntüyü tekrar etme */
+    background-attachment: fixed;
+    margin: -0;
+  }
+  
+  header {
+    position: relative;
+    z-index: 3;
+    background-color: #ece6ac;
+    padding: 1vh;
+    border-radius: 4vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    margin-right: 2.1vh;
+  }
+  
+  .headler nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .headler ul {
+    list-style: none;
+    padding: 0vh;
+    padding: 0vh;
+    margin: 0vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .headler li {
+    display: inline-block;
+    margin-right: 2vh;
+  }
+  
+  .headler a {
+    text-decoration: none;
+    color: #221b22;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 2.731411229135053vh;
+  }
+  
+  .headler a:hover {
+    color: #000;
+    display: inline-block;
+  }
+  
+  .headler .sendbutton {
+    background-color: rgba(255, 65, 0, 0.9);
+    font-size: 2.731411229135053vh;
+    color: white;
+    border: none;
+    max-height: 10vh;
+    border-radius: 4vh;
+  }
+  
+  /*---------------DROP-MENU---------------*/
+  .demo-dropdown {
+    z-index: 2;
+  }
+  
+  .demo-dropdown>li {
+    position: relative;
+    /* içerisinde ul position:absolute değerine sahip olduğu için kapsayıcı li relative olmalı */
+    display: inline-block;
+    margin-left: 1vh;
+  }
+  
+  .demo-dropdown>li ul {
+    position: absolute;
+    /* Açılır menü mouse üzerine gelerek açıldığında aşağıdaki öğeleri kaydırması istenmiyor. Bu yüzden absolute. */
+    display: none;
+    /* Açılır menü li:hover olmadığı sürece gizlencektir */
+    top: 3.5vh;
+    /* Top 100% değeri parent li'ye göre hesaplanır ve li'nin bittiği noktayı göstermektedir. */
+    left: -5vh;
+    /* left:0 değeri li'nin sol başlangıç değerini referans alır ve ul'yi aynı hizda konumlandırı. */
+    width: 31.86646433990895vh;
+    background-color: #ece6ac;
+    border-radius: 0vh 0vh 5vh 5vh;
+  }
+  
+  .demo-dropdown>li ul li a {
+    color: #333;
+    transition: max-height 1s;
+  }
+  
+  .demo-dropdown .droped {
+    margin-left: 2vh;
+  }
+  
+  .demo-dropdown .belgesel {
+    margin-bottom: 3vh;
+    margin-left: 2vh;
+  }
+  
+  .demo-dropdown .anka {
+    margin-top: 3vh;
+    margin-left: 2vh;
+  }
+  
+  .demo-dropdown>li:hover ul {
+    display: block;
+  }
+  
+  .mobile-menu a {
+    padding: 2vh;
+    color: #221b22;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Mobil cihazlar için menü düğmesi stil */
+  .mobile-menu-button {
+    display: none;
+  }
+  
+  /*---------------Logo Css---------------*/
+  .logo {
+    display: flex;
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 9.104704097116844vh;
+    max-height: 9.104704097116844vh;
+    margin-right: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*---------------FOOTER---------------*/
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 4vh;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    flex: 1;
+    text-align: left;
+    margin-left: 10vh;
+  }
+  
+  .footer-section h3 {
+    color: #ffcc00;
+    font-size: 4.09711684370258vh;
+  }
+  
+  .footer-section p {
+    font-size: 3vh;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 1.2139605462822458vh;
+  }
+  
+  .footer-content a {
+    font-size: 2.731411229135053vh;
+    color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  .footer-content .instagramlogo img{
+    width: 5vh;
+  
+  }

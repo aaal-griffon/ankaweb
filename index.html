@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y821FEVLY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="tr">
 
-  gtag('config', 'G-4Y821FEVLY');
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5423369070781676"
+    crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y821FEVLY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4Y821FEVLY');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,130 +20,127 @@
   <title>AAAL Tarih Topluluğu</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-  <div class = "headler">
-  <header>
-    <nav>
-      <div class="logo2">
-        <a id="mainpage" href=""><img src="images/logo.webp" alt="Tarih Topluluğu"></a>
-      <div class="mobile-menu-button" onclick="toggleMobileMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+
+  <div class="headler">
+    <header>
+      <nav>
+        <ul>
+          <div class="logo">
+            <a id="mainpage" href=""><img src="images/logo.webp" alt="Tarih Topluluğu"></a>
+          </div>
+
+          <li><a href="">Anasayfa</a></li>
+          <div class="demo-dropdown">
+            <li class="works" href=""><a>Çalışmalarımız</a>
+              <ul>
+                <li class="anka"><a href="/calismalarimiz/ankadergimiz/">Anka Dergimiz</a></li>
+                <li class="droped"><a href="/calismalarimiz/mercekgazetemiz/">Mercek Gazetemiz</a></li>
+                <li class="droped"><a href="/calismalarimiz/e-harita/">E-Haritamız</a></li>
+                <li class="droped"><a href="/calismalarimiz/makeler">Makelelerimiz</a></li>
+                <li class="belgesel"><a href="/calismalarimiz/belgeselimiz">Belgeselimiz</a></li>
+              </ul>
+            </li>
+          </div>
+          <li><a href="kadromuz/">Kadromuz</a></li>
+          <li><a href="hakkimizda/">Hakkımızda</a></li>
+        </ul>
+        <button class="sendbutton" id="sendbutton">Yazı Gönder</button>
+      </nav>
+    </header>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel-slide fade">
+      <a href="calismalarimiz/ankadergimiz/">
+        <img src="images/image1.jpg" alt="Image 1"></a>
+    </div>
+    <div class="carousel-slide fade">
+      <a href="calismalarimiz/mercekgazetemiz/">
+        <img src="images/image2.jpg" alt="Image 2">
+      </a>
+    </div>
+
+    <div class="carousel-slide fade">
+      <a href="calismalarimiz/e-harita/">
+        <img src="images/image3.jpg" alt="Image 3">
+      </a>
+    </div>
+    <div class="carousel-slide fade">
+      <a href="calismalarimiz/belgeselimiz/">
+        <img src="images/image4.jpg" alt="Image 4">
+      </a>
+    </div>
+
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <div class="makelevegelisme">
+    <div class="container">
+      <div class="section" id="makaleler">
+        <h2>Çalışmalar</h2>
+        <ul id="makaleListesi">
+          <!-- Makaleler dinamik olarak buraya eklenecek -->
+        </ul>
       </div>
-      
-      </div>
-      <ul>
-        <div class="logo">
-          <a id="mainpage" href=""><img src="images/logo.webp" alt="Tarih Topluluğu"></a>
+
+      <div class="announcement" id="gelistirmeler">
+        <h2>Duyurular</h2>
+        <div id="gelistirmelerIcerik">
+          <!-- Gelişmeler dinamik olarak buraya eklenecek -->
         </div>
-
-        <li><a href="">Anasayfa</a></li>
-        <div class="demo-dropdown">
-        <li class ="works" href=""><a>Çalışmalarımız</a>
-          <ul>
-            <li class = "anka"><a href="anka">Anka Dergimiz</a></li>
-            <li class = "droped"><a href="mercek">Mercek Gazetemiz</a></li>
-            <li class = "droped"><a href="eharita">E-Haritamız</a></li>
-            <li class = "droped"><a href="makeler">Makelelerimiz</a></li>
-            <li class = "belgesel"><a href="belgesel">Belgeselimiz</a></li>
-          </ul>
-        </li>
-      </div>
-
-      
-        <li><a href="kadromuz/">Kadromuz</a></li>
-        <li><a href="hakkimizda/">Hakkımızda</a></li>
-        
-      <button class = "sendbutton" id="sendbutton" >Yazı Gönder</button>
-      </ul>
-
-    </nav>
-  </header>
-</div>
-<div class="carousel-container">
-  <div class="carousel-slide fade">
-      <img src="images/image1.jpg" alt="Image 1">
-  </div>
-  <div class="carousel-slide fade">
-      <img src="images/image2.jpg" alt="Image 2">
-  </div>
-  <div class="carousel-slide fade">
-      <img src="images/image3.jpg" alt="Image 3">
-  </div>
-
-  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-  <a class="next" onclick="changeSlide(1)">&#10095;</a>
-</div>
-
-<div class="makelevegelisme">
-  <div class="container">
-    <div class="section" id="makaleler">
-      <h2>Çalışmalar</h2>
-      <ul id="makaleListesi">
-        <!-- Makaleler dinamik olarak buraya eklenecek -->
-      </ul>
-    </div>
-
-    <div class="announcement" id="gelistirmeler">
-      <h2>Duyurular</h2>
-      <div id="gelistirmelerIcerik">
-        <!-- Gelişmeler dinamik olarak buraya eklenecek -->
       </div>
     </div>
   </div>
-</div>
-<div class = "sendwrite">
-  <h2>Yazı Gönder</h2>
-  <div>
-  <form method="post">
+  <div class="sendwrite">
+    <h2>Yazı Gönder</h2>
     <div>
-  <label for="baslik">Ad Soyad:</label>
-  <input type="text" name="baslik" id="baslik" placeholder="Ad Soyad">
+      <form method="post">
+        <div>
+          <label for="baslik">Ad Soyad:</label>
+          <input type="text" name="baslik" id="baslik" placeholder="Ad Soyad">
+        </div>
+        <div>
+          <label for="mail">E-posta Adresi:</label>
+          <input type="email" name="mail" id="mail" placeholder="E-posta Adresi">
+        </div>
+        <div>
+          <label for="telefon">Telefon Numarası:</label>
+          <input type="tel" name="telefon" id="telefon" placeholder="Telefon Numarası">
+        </div>
+        <div>
+          <label for="dosya">Dosya:</label>
+          <input type="file" name="dosya" id="dosya">
+        </div>
+        <div>
+          <button type="submit" id="sendwrite">Gönder</button>
+        </div>
+    </div>
+    </form>
   </div>
-  <div>
-  <label for="mail">E-posta Adresi:</label>
-  <input type="email" name="mail" id="mail" placeholder="E-posta Adresi">
-</div>
-  <div>
-  <label for="telefon">Telefon Numarası:</label>
-  <input type="tel" name="telefon" id="telefon" placeholder="Telefon Numarası">
-</div>
-  <div>
-  <label for="dosya">Dosya:</label>
-  <input type="file" name="dosya" id="dosya">
-</div>
-  <div>
-  <button type="submit" id ="sendwrite">Gönder</button>
-</div>
-</div>
-</form>
-  </div>
-<footer>
-  <div class="footer-content">
+  <footer>
+    <div class="footer-content">
       <div class="footer-section">
-          <h3>İletişim</h3>
-          <p>aaaltarih@aaal.net.tr</p>
-          <p>0539 625 74 77</p>
-          <a href="https://www.instagram.com/tarih_toplulugu/" target="_blank">
-            <img src="images/instagram_logo.webp" alt="Instagram" width="30" height="30">
+        <h3>İletişim</h3>
+        <p>aaaltarih@aaal.net.tr</p>
+        <p>0539 625 74 77</p>
+        <a class=instagramlogo href="https://www.instagram.com/aaalankatarih/" target="_blank">
+          <img src="images/instagram_logo.webp" alt="Instagram">
         </a>
       </div>
       <div class="footer-section">
-          <h3>Linkler</h3>
-          <ul>
-              <li><a href="#">Ana Sayfa</a></li>
-              <li><a href="#">Kadromuz</a></li>
-              <li><a href="#">Hakkımızda</a></li>
-          </ul>
+        <h3>Linkler</h3>
+        <ul>
+          <li><a href="">Ana Sayfa</a></li>
+          <li><a href="/kadromuz/">Kadromuz</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        </ul>
       </div>
-      
-    
     </div>
   </footer>
-
   <script src="script.js"></script>
-
 </body>
 </html>
+<!--Kardeşim benim bunu okuyorsan bir webci olabilirsin ben bir webci değilim amk okulunda hiç bir webci olmadığı için site yapma işi bana kaldı bende 0 olan html css js bilgim ile site yapmaya giriştim site çok kötü olabilir lütfen kızma-->

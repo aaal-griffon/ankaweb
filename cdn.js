@@ -97,11 +97,11 @@ function createHtmlFiles(data) {
           <div class="demo-dropdown">
             <li class ="works" href=""><a>Çalışmalarımız</a>
               <ul>
-                <li class = "anka"><a href="/anka">Anka Dergimiz</a></li>
-                <li class = "droped"><a href="/mercek">Mercek Gazetemiz</a></li>
-                <li class = "droped"><a href="/eharita">E-Haritamız</a></li>
-                <li class = "droped"><a href="/makeler">Makelelerimiz</a></li>
-                <li class = "belgesel"><a href="/belgesel">Belgeselimiz</a></li>
+              <li class = "anka"><a href="/calismalarimiz/ankadergimiz/">Anka Dergimiz</a></li>
+              <li class = "droped"><a href="/calismalarimiz/mercekgazetemiz/">Mercek Gazetemiz</a></li>
+              <li class = "droped"><a href="/calismalarimiz/e-harita/">E-Haritamız</a></li>
+              <li class = "droped"><a href="/calismalarimiz/makeler">Makelelerimiz</a></li>
+              <li class = "belgesel"><a href="/calismalarimiz/belgeselimiz">Belgeselimiz</a></li>
               </ul>
             </li>
           </div>
@@ -131,10 +131,10 @@ function createHtmlFiles(data) {
           </div>
           <div class="footer-section">
             <h3>Linkler</h3>
-            <ul>
-              <li><a href="#">Ana Sayfa</a></li>
-              <li><a href="#">Kadromuz</a></li>
-              <li><a href="#">Hakkımızda</a></li>
+            <ul>              
+            <li><a href="../">Ana Sayfa</a></li>
+            <li><a href="../kadromuz/">Kadromuz</a></li>
+            <li><a href="../hakkimizda/">Hakkımızda</a></li>
             </ul>
           </div>
         </div>

@@ -1,8 +1,3 @@
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-4Y821FEVLY');
 function toggleMobileMenu() {
     var ulElement = document.querySelector('.headler ul');
 
@@ -14,5 +9,5 @@ function toggleMobileMenu() {
     }
 }
 function yazigonderscroll(){
-    window.location.href = "../../#sendwrite";
+    window.location.href = "../#sendwrite";
 }

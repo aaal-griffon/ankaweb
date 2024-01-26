@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y821FEVLY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Y821FEVLY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4Y821FEVLY');
-</script>
+    gtag('config', 'G-4Y821FEVLY');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -17,94 +18,88 @@
   <title>Hakkımızda</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-  <div class = "headler">
+
+  <div class="headler">
     <header>
       <nav>
-        <div class="logo2">
-          <a id="mainpage" href="/"><img src="../images/logo.webp" alt="Tarih Topluluğu"></a>
-        <div class="mobile-menu-button" onclick="toggleMobileMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        
-        </div>
         <ul>
           <div class="logo">
             <a id="mainpage" href="/"><img src="../images/logo.webp" alt="Tarih Topluluğu"></a>
           </div>
-  
-          <li><a href="/">Anasayfa</a></li>
+
+          <li><a href="../">Anasayfa</a></li>
           <div class="demo-dropdown">
-          <li class ="works" href=""><a>Çalışmalarımız</a>
-            <ul>
-              <li class = "anka"><a href="/anka">Anka Dergimiz</a></li>
-              <li class = "droped"><a href="/mercek">Mercek Gazetemiz</a></li>
-              <li class = "droped"><a href="/eharita">E-Haritamız</a></li>
-              <li class = "droped"><a href="/makeler">Makelelerimiz</a></li>
-              <li class = "belgesel"><a href="/belgesel">Belgeselimiz</a></li>
-            </ul>
-          </li>
-        </div>
-  
-        
-          <li><a href="">Kadromuz</a></li>
-          <li><a href="/hakkimizda/">Hakkımızda</a></li>
-          <button class = "sendbutton" id="sendbutton" onclick="yazigonderscroll()">Yazı Gönder</button>
+            <li class="works" href=""><a>Çalışmalarımız</a>
+              <ul>
+                <li class="anka"><a href="../calismalarimiz/ankadergimiz/">Anka Dergimiz</a></li>
+                <li class="droped"><a href="../calismalarimiz/mercekgazetemiz/">Mercek Gazetemiz</a></li>
+                <li class="droped"><a href="../calismalarimiz/e-harita/">E-Haritamız</a></li>
+                <li class="droped"><a href="../calismalarimiz/makeler">Makelelerimiz</a></li>
+                <li class="belgesel"><a href="../calismalarimiz/belgeselimiz">Belgeselimiz</a></li>
+              </ul>
+            </li>
+          </div>
+          <li><a href="../kadromuz/">Kadromuz</a></li>
+          <li><a href="../hakkimizda/">Hakkımızda</a></li>
         </ul>
-  
+        <button class = "sendbutton" id="sendbutton" onclick="yazigonderscroll()">Yazı Gönder</button>
       </nav>
     </header>
   </div>
-  <div class = "framework">
-    <h2>KADROMUZ</h2>
-    <div class = "sema">
-    <h3>AAAL Tarih Topluluğu Başkanı</h3>
-    <h4>Sema Nisa YAZICI</h4>
+    <div class="main">
+      <div class = kadro>
+        <h2>Kadromuz</h2>
+      </div>
+      <div class="sema">
+      <div>
+        <h3>AAAL Tarih Topluluğu Başkanı</h3>
+      </div>
+      <div>
+        <h4>Sema Nisa YAZICI</h4>
+      </div>
+    </div>
+      <div class = "yonetimkurulu">
+      <div class = "yaziisleri">
+        <h3>Yazı İşleri Kurulu</h3>
+        <h4>Yağız KURTOĞLU</h4>
+        <h4>İbrahim Furkan UĞURDAĞ</h4>
+      </div>
+      <div class = "tasarımkurulu">
+        <h3>Tasarım Kurulu</h3>
+        <h4>Yağız TOPAY</h4>
+        <h4>Nart Burak ERDEN</h4>
+      </div>
+      <div class = "efaliyetkurulu">
+        <h3>E-Faaliyet Kurulu</h3>
+        <h4>Efe Kerem EFEKAN</h4>
+        <h4>Ömer Efe ÇELİK</h4>
+      </div>
+    </div>
+    </div>
   </div>
-  <div class ="yontemkurul">
-    <h3>Yönetim Kurulu</h3>
-    </div>
-    <div class = "yanbaslik">
-      <h4>Yazı İşleri Kurulu</h4>
-      <h4>Tasarım Kurulu</h4>
-      <h4>E-Faaliyet Kurulu</h4>
-    </div>
-    <div class = "names1">
-      <h5>İbrahim Furkan UĞURDAĞ</h5>
-      <h5>Yağız TOPAY</h5>
-      <h5>Efe Kerem EFEKAN</h5>
-    </div>
-    <div class = "names2">
-      <h5>Yağız Kurtoğlu</h5>
-      <h5>Nart Burak ERDEN</h5>
-      <h5>Ömer Efe ÇELİK</h5>
-    </div>
-  </div>
-  </div>
-<footer>
-  <div class="footer-content">
-
+  <footer>
+    <div class="footer-content">
       <div class="footer-section">
-          <h3>İletişim</h3>
-          <p>aaaltarih@aaal.net.tr</p>
-          <p>0539 625 74 77</p>
-          <a href="https://www.instagram.com/tarih_toplulugu/" target="_blank">
-            <img src="../images/instagram_logo.webp" alt="Instagram" width="30" height="30">
+        <h3>İletişim</h3>
+        <p>aaaltarih@aaal.net.tr</p>
+        <p>0539 625 74 77</p>
+        <a class=instagramlogo href="https://www.instagram.com/aaalankatarih/" target="_blank">
+          <img src="../images/instagram_logo.webp" alt="Instagram">
         </a>
       </div>
       <div class="footer-section">
-          <h3>Linkler</h3>
-          <ul>
-              <li><a href="#">Ana Sayfa</a></li>
-              <li><a href="#">Kadromuz</a></li>
-              <li><a href="#">Hakkımızda</a></li>
-          </ul>
+        <h3>Linkler</h3>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/kadromuz/">Kadromuz</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-
   <script src="script.js"></script>
-
 </body>
+
 </html>
