@@ -145,56 +145,90 @@ header {
   align-items: center;
 }
 
-  /*---------------FOOTER---------------*/
-  footer {
-  
-    background-color: #333;
-    color: white;
-    padding: 4vh;
- 
-    bottom: 0;
+/*---------------FOOTER---------------*/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 4vh;
+  bottom: 0;
+}
 
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: left;
+  margin-left: 10vh;
+}
+
+.footer-section h3 {
+  color: #ffcc00;
+  font-size: 4.09711684370258vh;
+}
+
+.footer-section p {
+  font-size: 3vh;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 1.2139605462822458vh;
+}
+
+.footer-content a {
+  font-size: 2.731411229135053vh;
+  color: #fff;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-content .instagramlogo img {
+  width: 5vh;
+
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+  .headler li{
+    display: none;
   }
-  
+
+  .main-menu {
+    display: none; /* Hide main menu initially */
+  }
+
   .footer-content {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Elemanları dikey hizala */
+    align-items: center; /* Yatay hizalama */
   }
-  
+
   .footer-section {
-    flex: 1;
-    text-align: left;
-    
-    margin-left: 10vh;
+    margin-left: 0;    /* Kenar boşluğunu kaldır */ 
+    text-align: center; /* Metni ortala */
   }
-  /**/
+
+  /* Daha küçük ekranlarda font ve boşlukları ayarla (isteğe bağlı)*/
   .footer-section h3 {
-    color: #ffcc00;
-    font-size: 4.09711684370258vh;
+    font-size: 3.5vh; 
   }
-  .footer-section p{
-    font-size:3vh;
-  }
-  .footer-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-content ul li {
-    margin-bottom: 1.2139605462822458vh;
-  }
-  
-  .footer-content a {
-    font-size: 2.731411229135053vh;
-    color: #fff;
-    text-decoration: none;
-flex-direction: column;
-  }
-  
-  .footer-content a:hover {
-    text-decoration: underline;
-  }
-  .anaicerik{
+  .footer-section p {
+    font-size: 2.5vh; 
+  } 
+
+
+}
+.anaicerik{
 display: flex;
   }
   .dergifoto img{

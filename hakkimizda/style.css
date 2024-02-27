@@ -245,3 +245,39 @@ footer {
   border-radius: 5vh;
   padding: 2vh
 }
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+  .headler li{
+    display: none;
+  }
+
+  .main-menu {
+    display: none; /* Hide main menu initially */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Elemanları dikey hizala */
+    align-items: center; /* Yatay hizalama */
+  }
+
+  .footer-section {
+    margin-left: 0;    /* Kenar boşluğunu kaldır */ 
+    text-align: center; /* Metni ortala */
+  }
+
+  /* Daha küçük ekranlarda font ve boşlukları ayarla (isteğe bağlı)*/
+  .footer-section h3 {
+    font-size: 3.5vh; 
+  }
+  .footer-section p {
+    font-size: 2.5vh; 
+  } 
+  .hakkimizda .hakkimizda-baslik h2 {
+    font-size: 4vh; /* Reduce heading size on smaller screens */
+  }
+
+  .hakkimizdametin p {
+    font-size: 3vh; /* Reduce paragraph text size */
+    margin: 2vh;   /* Adjust margins if needed */
+  }
+}

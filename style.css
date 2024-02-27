@@ -361,3 +361,76 @@ footer {
   font-weight: bold;
   color: white;
 }
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+  .headler li{
+    display: none;
+  }
+
+  .main-menu {
+    display: none; /* Hide main menu initially */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Elemanları dikey hizala */
+    align-items: center; /* Yatay hizalama */
+  }
+
+  .footer-section {
+    margin-left: 0;    /* Kenar boşluğunu kaldır */ 
+    text-align: center; /* Metni ortala */
+  }
+
+  /* Daha küçük ekranlarda font ve boşlukları ayarla (isteğe bağlı)*/
+  .footer-section h3 {
+    font-size: 3.5vh; 
+  }
+  .footer-section p {
+    font-size: 2.5vh; 
+  } 
+  .carousel-container {
+    width: 95vw; /* Occupy nearly full viewport width */
+    margin-top: 5vh; /* Increase top margin for better spacing */
+    
+  }
+.carousel-container img{
+  width: 45vh;
+
+}
+.container {
+  flex-direction: column; /* Öğeleri sütun halinde sırala */
+}
+
+.section, .announcement {
+  flex-basis: auto; /* Esnek genişliğe izin ver */
+  width: 90%;  /* Daha dar bir genişlik ayarla */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.announcement {
+  margin-left: 0; /* Duyuru için sol boşluğu sıfırla */
+}
+.sendwrite {
+  width: 90%; /* Increase width for better fit on phone screens */
+  padding: 2vh;  /* Reduce padding */
+}
+
+.sendwrite h2 {
+    font-size: 4vh; /* Slightly reduce heading size */
+}
+
+.sendwrite input {
+    font-size: 2vh; /* Reduce input text size */
+}
+
+.sendwrite button {
+  font-size: 2.2vh;  /*  Reduce button text size */
+  margin-left: 35%; /* Adjust button centering */
+}
+
+.sendwrite label {
+  font-size: 3vh; /* Reduce label size */
+}
+}
+
