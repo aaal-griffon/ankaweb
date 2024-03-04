@@ -2,7 +2,7 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
+import { getStorage, ref, uploadBytes } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -131,6 +131,12 @@ const form = document.querySelector('form'); // Assuming your form has an 'id'
     const mail = document.getElementById('mail').value;
     const telefon = document.getElementById('telefon').value;
     const file = document.getElementById('dosya').files[0];
+
+    // Check if a file was selected
+    if (!file) {
+        alert("Please select a file to upload."); 
+        return; // Stop submission if no file
+    }
 
     // File Upload to Firebase Storage
     const storageRef = ref(storage, `submissions/${file.name}`); 
