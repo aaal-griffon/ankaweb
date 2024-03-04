@@ -149,7 +149,8 @@ form.addEventListener('submit', (event) => {
             adSoyad: adsoyad,
             email: mail,
             telefon: telefon,
-            fileUrl: fileUrl
+            fileUrl: fileUrl,
+            dosyaAdi: file.name,
           })
             .then(() => alert("Yazı Gönderildi!"))
             .catch((error) => console.error("Firestore error:", error));
