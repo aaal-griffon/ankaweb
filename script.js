@@ -123,8 +123,8 @@ document.getElementById("sendbutton").addEventListener("click", function() {
 
   });
 
-  const form = document.querySelector('form'); // Assuming your form has an 'id'
-form.addEventListener('submit', (event) => {
+const form = document.querySelector('form'); // Assuming your form has an 'id'
+    form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent default form submission
 
     const adsoyad = document.getElementById('baslik').value;
