@@ -95,3 +95,32 @@ document.getElementById("sendbutton").addEventListener("click", function() {
     gelistirmelerIcerik.innerHTML = '<p>Burada gelişmelerin içeriği olacak.</p>';
 
   });
+
+  const form = document.querySelector('form'); // Assuming your form has an 'id'
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const adsoyad = document.getElementById('baslik').value;
+    const mail = document.getElementById('mail').value;
+    const telefon = document.getElementById('telefon').value;
+    const file = document.getElementById('dosya').files[0];
+
+    // File Upload to Firebase Storage
+    const storageRef = ref(storage, `submissions/${file.name}`); 
+    uploadBytes(storageRef, file)
+        .then((snapshot) => {
+            getDownloadURL(snapshot.ref)
+                .then((fileUrl) => {
+                    // Store submission data in Firestore
+                    addDoc(collection(db, "submissions"), {
+                        adSoyad: adsoyad,
+                        email: mail,
+                        telefon: telefon,
+                        fileUrl: fileUrl
+                    })
+                    .then(() => alert("Yazı Gönderildi!"))
+                    .catch((error) => console.error("Firestore error:", error));
+            });
+        })
+        .catch((error) => console.error("Upload error:", error));
+});
