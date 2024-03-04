@@ -117,11 +117,13 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+    const storage = getStorage(app);
+const db = getFirestore(app);
 </script>
   <div class="sendwrite">
     <h2>Yazı Gönder</h2>
     <div>
-      <form method="post">
+      <form method="post" enctype="multipart/form-data">
         <div>
           <label for="baslik">Ad Soyad:</label>
           <input type="text" name="baslik" id="baslik" placeholder="Ad Soyad">
