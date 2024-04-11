@@ -123,7 +123,7 @@ form.addEventListener('submit', (event) => {
 
   // Check if a file was selected
   if (!file) {
-    alert("Please select a file to upload.");
+    alert("Lütfen Dosya Seçin!");
     return; // Stop submission if no file
   }
 
@@ -142,8 +142,9 @@ form.addEventListener('submit', (event) => {
             dosyaAdi: file.name,
           })
             .then(() => alert("Yazı Gönderildi!"))
-            .catch((error) => console.error("Firestore error:", error));
+            .catch((error) => alert("Firestore error:", error));
         });
     })
-    .catch((error) => console.error("Upload error:", error));
+    .catch((error) => alert("Dosya Yüklenemedi:", error));
+
 });
