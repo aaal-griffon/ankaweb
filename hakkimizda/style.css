@@ -234,14 +234,14 @@ footer {
   color: #000000;
   /* Başlık rengi */
   padding: 2vh;
-  background-color: #ecf0f1;
+  background-color: #ece6ac;
   /* Ana kutu arka plan rengi */
   border-radius: 5vh;
 }
 
 .hakkimizdametin p:nth-of-type(2) {
   font-weight: bold;
-  background-color: #ecf0f1;
+  background-color: #ece6ac;
   border-radius: 5vh;
   padding: 2vh
 }

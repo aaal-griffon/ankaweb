@@ -39,6 +39,7 @@ function changeSlide(n) {
   currentIndex = (currentIndex + n + slides.length) % slides.length;
   showSlide(currentIndex);
   resetInterval();
+ 
 }
 
 function resetInterval() {
