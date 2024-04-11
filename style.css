@@ -260,7 +260,7 @@ footer {
 .announcement {
   flex-basis: 50%;
   /* İki bölümü eşit genişlikte ayarlar */
-  background-color: rgba(2236, 230, 172, 0.9);
+  background-color: rgba(236, 230, 172, 0.9);
 
   border-radius: 5vh;
   padding: 3vh;
