@@ -78,16 +78,7 @@ function makelekoyucu(basliksema, baslikomer) {
     makaleListesi.appendChild(li);
   }
 }
-function toggleMobileMenu() {
-  var ulElement = document.querySelector('.headler ul');
 
-  // Görünürlüğü kontrol et ve tersine çevir
-  if (ulElement.style.display === 'none' || ulElement.style.display === '') {
-    ulElement.style.display = 'block';
-  } else {
-    ulElement.style.display = 'none';
-  }
-}
 document.addEventListener('DOMContentLoaded', function () {
 
   const jsonDosyaURL = 'veri.json';
@@ -118,9 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Gelişmeler için
   var gelistirmelerIcerik = document.getElementById('gelistirmelerIcerik');
-  // Buraya gelişmelerin içeriğini ekleyebilirsin
-  gelistirmelerIcerik.innerHTML = '<p>Burada gelişmelerin içeriği olacak.</p>';
-
+ 
 });
 
 const form = document.querySelector('form'); // Assuming your form has an 'id'

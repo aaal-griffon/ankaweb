@@ -246,7 +246,9 @@ footer {
   padding: 2vh
 }
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
-
+  body{
+    font-size: 2vh;
+  }
   .headler li{
     display: none;
   }
@@ -273,11 +275,11 @@ footer {
     font-size: 2.5vh; 
   } 
   .hakkimizda .hakkimizda-baslik h2 {
-    font-size: 4vh; /* Reduce heading size on smaller screens */
+    font-size: 3vh; /* Reduce heading size on smaller screens */
   }
 
   .hakkimizdametin p {
-    font-size: 3vh; /* Reduce paragraph text size */
+    font-size: 2vh; /* Reduce paragraph text size */
     margin: 2vh;   /* Adjust margins if needed */
   }
 }

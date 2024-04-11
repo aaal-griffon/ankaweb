@@ -362,7 +362,9 @@ footer {
   color: white;
 }
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
-
+body{
+  font-size: 2vh;
+}
   .headler li{
     display: none;
   }
@@ -403,7 +405,7 @@ footer {
 
 .section, .announcement {
   flex-basis: auto; /* Esnek genişliğe izin ver */
-  width: 90%;  /* Daha dar bir genişlik ayarla */
+  width: 80%;  /* Daha dar bir genişlik ayarla */
   margin-left: auto;
   margin-right: auto;
 }
@@ -412,25 +414,25 @@ footer {
   margin-left: 0; /* Duyuru için sol boşluğu sıfırla */
 }
 .sendwrite {
-  width: 90%; /* Increase width for better fit on phone screens */
+  width: 85%; /* Increase width for better fit on phone screens */
   padding: 2vh;  /* Reduce padding */
 }
 
 .sendwrite h2 {
-    font-size: 4vh; /* Slightly reduce heading size */
+    font-size: 3vh; /* Slightly reduce heading size */
 }
 
 .sendwrite input {
-    font-size: 2vh; /* Reduce input text size */
+    font-size: 1.7vh; /* Reduce input text size */
 }
 
 .sendwrite button {
-  font-size: 2.2vh;  /*  Reduce button text size */
+  font-size: 1.7vh;  /*  Reduce button text size */
   margin-left: 35%; /* Adjust button centering */
 }
 
 .sendwrite label {
-  font-size: 3vh; /* Reduce label size */
+  font-size: 2vh; /* Reduce label size */
 }
 }
 

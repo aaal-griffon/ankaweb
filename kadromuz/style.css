@@ -225,7 +225,7 @@ flex-direction: column;
   border-radius: 4vh;
 }
 .main .sema h4 {
-  background-color: #fff;
+  background-color: #f1f1f1;
   padding: 1vh;
   border-radius: 4vh;
 }
@@ -243,13 +243,15 @@ flex-direction: column;
   text-align: center;
 }
 .main .yonetimkurulu h4{
-  background-color: #fff;
+  background-color: #f1f1f1;
   padding: 1vh;
   border-radius: 4vh;
   text-align: center;
 }
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
-
+  body{
+    font-size: 2vh;
+  }
   .headler li{
     display: none;
   }
