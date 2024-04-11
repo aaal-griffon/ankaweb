@@ -127,7 +127,7 @@ form.addEventListener('submit', (event) => {
     alert("Lütfen Dosya Seçin!");
     return; // Stop submission if no file
   }
-
+alert("Yükleniyor Lütfen Bekleyin!")
   // File Upload to Firebase Storage
   const storageRef = ref(storage, `submissions/${file.name}`);
   uploadBytes(storageRef, file)
