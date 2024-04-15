@@ -127,7 +127,10 @@ form.addEventListener('submit', (event) => {
     alert("Lütfen Dosya Seçin!");
     return; // Stop submission if no file
   }
-alert("Yükleniyor Lütfen Bekleyin!")
+
+  setTimeout(function() { alert("Dosya Yükleniyor... Lütfen Bekleyin"); }, 1); //alert()'in scripti durdurup ok'a basılana kadar
+  //yüklemeyi engellemesi durumunu engellemek için async fonksiyon olan settimeout kullanıyoruz
+  
   // File Upload to Firebase Storage
   const storageRef = ref(storage, `submissions/${file.name}`);
   uploadBytes(storageRef, file)
